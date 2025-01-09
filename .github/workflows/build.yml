@@ -24,7 +24,7 @@ jobs:
     # Étape 3 : Construire l'image Docker
     - name: Build Docker Image
       run: |
-        docker build -t ${{ secrets.DOCKER_HUB_USERNAMEE }}/frontend-nginx:latest .
+        docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/frontend-nginx:latest .
 
     # Étape 4 : Pousser l'image Docker sur Docker Hub
     - name: Push Docker Image
