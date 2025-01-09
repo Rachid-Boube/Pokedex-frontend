@@ -1,5 +1,5 @@
 # Utiliser l'image Nginx officielle comme image de base
-FROM nginx:latest
+FROM nginxinc/nginx-unprivileged
 
 # Copier les fichiers HTML, CSS et images dans le dossier de Nginx
 COPY . /usr/share/nginx/html
