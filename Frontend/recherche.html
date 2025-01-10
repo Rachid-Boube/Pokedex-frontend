@@ -37,7 +37,7 @@
             alert('insert Pokémon ID');
             return;
         }
-        fetch(`http://localhost:8080/api/pokemons/${pokemonId}`)
+        fetch(`https://route-wrong-meadowlark-yuan36803-dev.apps.rm1.0a51.p1.openshiftapps.com/api/pokemons/${pokemonId}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Pokémon not found');
